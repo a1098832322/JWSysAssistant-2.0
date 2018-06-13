@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/relogin_btn_captcha"
+        android:icon="@drawable/ic_autorenew_black_24dp"
+        android:title="刷新登录"
+        />
+    <item
+        android:id="@+id/relogin_btn_login"
+        android:icon="@drawable/ic_person_black_24dp"
+        android:title="切换账号"
+        />
+</menu>

@@ -1,0 +1,45 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+
+    <style name="AppTheme.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <declare-styleable name="btnColor">
+        <attr name="btnGrade" format="color">@color/btn_grade</attr>
+        <attr name="btnTest" format="color">@color/btn_test</attr>
+    </declare-styleable>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar"/>
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light"/>
+
+
+
+    <!--button样式-->
+    <style name="GradeButton" parent="Theme.AppCompat.Light">
+        <item name="colorControlHighlight">@color/btn_grade_pressed</item>
+        <item name="colorButtonNormal">@color/btn_grade</item>
+    </style>
+    <style name="TestButton" parent="Theme.AppCompat.Light">
+        <item name="colorControlHighlight">@color/btn_test_pressed</item>
+        <item name="colorButtonNormal">@color/btn_test</item>
+    </style>
+    <style name="OnekeyButton" parent="Theme.AppCompat.Light">
+        <item name="colorControlHighlight">@color/btn_onekey_pressed</item>
+        <item name="colorButtonNormal">@color/btn_onekey</item>
+    </style>
+    <style name="ClassButton" parent="Theme.AppCompat.Light">
+        <item name="colorControlHighlight">@color/btn_class_pressed</item>
+        <item name="colorButtonNormal">@color/btn_class</item>
+    </style>
+</resources>

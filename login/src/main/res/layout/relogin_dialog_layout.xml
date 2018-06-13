@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              android:id="@+id/relogin_dialog"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/ico"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:scaleType="fitCenter"
+                android:src="@drawable/ic_info_outline_pink_a100_24dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/ico"
+                android:fontFeatureSettings=""
+                android:text="@string/dialog_title"
+                android:textColor="#2a2a2a"
+                android:textSize="18sp"
+                android:textStyle="normal"/>
+        </LinearLayout>
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/dialog_img"
+            android:layout_width="366px"
+            android:layout_height="162px"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/ic_empty_code"/>
+
+
+        <EditText
+            android:id="@+id/dialog_code"
+            android:layout_width="wrap_content"
+            android:layout_height="162px"
+            android:layout_marginRight="30dp"
+            android:layout_weight="4"
+            android:hint="@string/prompt_code"
+            android:inputType="text"
+            android:maxLines="1"
+            android:singleLine="true"/>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          package="com.wishes.assistant.myapplication">
+
+
+    <uses-permission android:name="android.permission.INTERNET"></uses-permission>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.DOWNLOAD_WITHOUT_NOTIFICATION"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/ic_proj_ico"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.DayNight">
+        <activity
+            android:name="com.wishes.assistant.myapplication.MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.wishes.assistant.myapplication.activity.JWSystemLoginPageActivity"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity
+            android:name="com.wishes.assistant.io.image.SimpleSampleActivity"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity
+            android:name="com.wishes.assistant.myapplication.activity.About"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity
+            android:name=".activity.Help"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity
+            android:name="com.wishes.assistant.myapplication.activity.PDF"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity
+            android:name="com.wishes.assistant.myapplication.activity.submenu.Grade"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity
+            android:name="com.wishes.assistant.myapplication.activity.submenu.OneKey"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity
+            android:name="com.wishes.assistant.myapplication.activity.submenu.Test"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity
+            android:name="com.wishes.assistant.myapplication.activity.submenu.ClassTable"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity
+            android:name="com.wishes.assistant.myapplication.activity.LibraryLoginPageActivity"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths"/>
+        </provider>
+
+        <service
+            android:name="com.wishes.assistant.net.download.NewPackageDownloadService"
+            android:enabled="true"
+            >
+        </service>
+    </application>
+
+
+</manifest>
